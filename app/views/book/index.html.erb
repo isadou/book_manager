@@ -1,0 +1,15 @@
+<div class="banner">
+  <h2><%= Discover all our Librairy !%></h2>
+</div>
+
+<div class="container">
+  <% @books.each do |book| %>
+    <p><%= book.title %></p>
+    <p><%= book.author %></p>
+    <p><%= book.resume %></p>
+    <p><%= book.year %></p>
+    <p><%= book.price %> €</p>
+  <% end %>
+</div>
+
+<%= link_to 'Back!',  books_path %>
